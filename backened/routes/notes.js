@@ -12,7 +12,7 @@ try {
 
     res.json(notes)
 } catch (error) {
-        console.error(error.message);
+        console.error(error.message)
         res.status(500).send("Internal Server Error");
     }
 }
@@ -20,7 +20,7 @@ try {
 
 // Router 2: Add a new Notes using: POST "/api/notes/addnote". Login required
 router.post('/addnote',fetchuser, [
-    body('name', 'Enter a valid name').isLength({ min: 3 }),
+    body('title', 'Enter a valid name').isLength({ min: 3 }),
     body('description', 'Description must be atleast 5 characters').isLength({ min: 5 }),
 ],async (req, res) => {
     try {
