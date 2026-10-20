@@ -1,4 +1,17 @@
 $kind: http-request
-url: ""
-method: GET
+url: localhost:5000/api/auth/createuser
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"hello sink56\",\r
+
+    \    \"email\": \"sushitapgak1@gmail.com\",\r
+
+    \    \"password\": \"password123\"\r
+
+    \r
+
+    }"
 order: 1000

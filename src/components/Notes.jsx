@@ -10,7 +10,7 @@ const Notes = (props) => {
   let navigate = useNavigate();
   const { notes, getNote, editNote } = context;
   useEffect(() => {
-    if(localStorage.getItem('token')){
+    if(localStorage.  getItem('token')){
 
     getNote()
     }
